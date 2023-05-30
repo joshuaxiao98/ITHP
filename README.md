@@ -25,10 +25,9 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
     ```
 
 3. Download datasets inside ./datasets folder, run ./download_datasets.sh to download MOSI and MOSEI datasets. [^1]
-
+   
 
 4. To train the model, run the `train.py` script:
-
     ```bash
     python train.py
     ```
@@ -38,11 +37,9 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
 
 >If you need to modify the variables, loss functions, or the outputs of the training, you'll need to adjust the code in `train.py`.
 
-The factors that affect memory usage are:
-
-- **`max_seq_length`**: The released models were trained with sequence lengths `50`, but you can fine-tune with a shorter max sequence length to save substantial memory. This is controlled by the `max_seq_length` flag in our example code.
-- **`train_batch_size`**: The memory usage is also directly proportional to the batch size.
-
+>The factors that affect memory usage are:
+>- **`max_seq_length`**: The released models were trained with sequence lengths `50`, but you can fine-tune with a shorter max sequence length to save substantial memory. This is controlled by the `max_seq_length` flag in our example code.
+>- **`train_batch_size`**: The memory usage is also directly proportional to the batch size.
 
 
 ## Citation
@@ -53,4 +50,4 @@ You may cite us using:
 <Anonymous>
 ```
 
-[^1]: Datasets we used are from https://github.com/WasifurRahman/BERT_multimodal_transformer.git
+[^1] Datasets we used are from https://github.com/WasifurRahman/BERT_multimodal_transformer.git

@@ -36,7 +36,7 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
 _Modifications_
 
 >If you need to modify the variables, loss functions, or the outputs of the training, you'll need to adjust the code in `train.py`.
-
+>
 >The factors that affect memory usage are:
 >- **`max_seq_length`**: The released models were trained with sequence lengths `50`, but you can fine-tune with a shorter max sequence length to save substantial memory. This is controlled by the `max_seq_length` flag in our example code.
 >- **`train_batch_size`**: The memory usage is also directly proportional to the batch size.

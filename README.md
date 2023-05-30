@@ -15,12 +15,12 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
 ## Usage
 
 1. Clone the repository to your local machine:
-    ```bash
-    git clone <the repository's URL>
+    ```
+    git clone [the repository's URL]
     ```
 
 2. Set up the environment
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
 
@@ -28,7 +28,7 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
    
 
 4. To train the model, run the `train.py` script:
-    ```bash
+    ```
     python train.py
     ```
 

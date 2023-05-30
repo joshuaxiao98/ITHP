@@ -24,7 +24,10 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
     pip install -r requirements.txt
     ```
 
-3. To train the model, run the `train.py` script:
+3. Download datasets inside ./datasets folder, run ./download_datasets.sh to download MOSI and MOSEI datasets. [^1]
+
+
+4. To train the model, run the `train.py` script:
 
     ```bash
     python train.py
@@ -49,3 +52,5 @@ You may cite us using:
 ```tex
 <Anonymous>
 ```
+
+[^1]: Datasets we used are from https://github.com/WasifurRahman/BERT_multimodal_transformer.git

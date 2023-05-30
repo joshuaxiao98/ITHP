@@ -43,4 +43,4 @@ _Modifications_
 
 
 
-[^1]: Datasets we used are from https://github.com/WasifurRahman/BERT_multimodal_transformer.git
+[^1]: Datasets we utilized were sourced from [https://github.com/WasifurRahman/BERT_multimodal_transformer.git]

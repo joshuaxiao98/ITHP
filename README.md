@@ -24,7 +24,7 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
     pip install -r requirements.txt
     ```
 
-3. Download datasets inside ./datasets folder, run ./download_datasets.sh to download MOSI and MOSEI datasets. [^1]
+3. Download datasets inside ./datasets folder, run ./download_datasets.sh to download MOSI and MOSEI datasets. [1]
    
 4. To train the model, run the `train.py` script:
     ```
@@ -42,4 +42,4 @@ _Modifications_
 
 
 
-[^1]: Datasets we used are from [Integrating Multimodal Information in Large Pretrained Transformers](https://github.com/WasifurRahman/BERT_multimodal_transformer)
+[1]: Datasets we used are from [Integrating Multimodal Information in Large Pretrained Transformers](https://github.com/WasifurRahman/BERT_multimodal_transformer)

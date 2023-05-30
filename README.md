@@ -33,7 +33,7 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
     ```
 
 
-**Modifications**
+_Modifications_
 
 >If you need to modify the variables, loss functions, or the outputs of the training, you'll need to adjust the code in `train.py`.
 
@@ -42,12 +42,5 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
 >- **`train_batch_size`**: The memory usage is also directly proportional to the batch size.
 
 
-## Citation
 
-You may cite us using:
-
-```tex
-<Anonymous>
-```
-
-[^1] Datasets we used are from https://github.com/WasifurRahman/BERT_multimodal_transformer.git
+[^1]: Datasets we used are from https://github.com/WasifurRahman/BERT_multimodal_transformer.git

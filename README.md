@@ -16,7 +16,7 @@ The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspir
 
 1. Clone the repository to your local machine:
     ```
-    git clone <the repository's URL>
+    git clone https://github.com/joshuaxiao98/ITHP.git
     ```
 
 2. Set up the environment

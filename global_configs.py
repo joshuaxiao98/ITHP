@@ -3,10 +3,13 @@ import torch
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
+TEXT_DIM = None
+ACOUSTIC_DIM = None
+VISUAL_DIM = None
 DEVICE = torch.device("cuda:0")
 
 def set_dataset_config(dataset_name):
-    global ACOUSTIC_DIM, VISUAL_DIM, TEXT_DIM
+    global TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM
 
     dataset_configs = {
         "mosi": {

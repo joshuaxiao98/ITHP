@@ -3,9 +3,9 @@ import torch
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
-TEXT_DIM = None
-ACOUSTIC_DIM = None
-VISUAL_DIM = None
+TEXT_DIM = 0
+ACOUSTIC_DIM = 0
+VISUAL_DIM = 0
 DEVICE = torch.device("cuda:0")
 
 def set_dataset_config(dataset_name):

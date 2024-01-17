@@ -18,7 +18,7 @@ from torch.optim import AdamW
 from transformers import get_linear_schedule_with_warmup
 from deberta_ITHP import ITHP_DeBertaForSequenceClassification
 
-from global_configs import DATASET_CONFIGS, DEVICE
+from global_configs import set_dataset_config, DEVICE
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", type=str, default="microsoft/deberta-v3-base", )
@@ -48,10 +48,7 @@ parser.add_argument('--B1_dim', default=64, type=float)
 
 args = parser.parse_args()
 
-ACOUSTIC_DIM = DATASET_CONFIGS[args.dataset]["ACOUSTIC_DIM"]
-VISUAL_DIM = DATASET_CONFIGS[args.dataset]["VISUAL_DIM"]
-TEXT_DIM = DATASET_CONFIGS[args.dataset]["TEXT_DIM"]
-
+set_dataset_config(args.dataset)
 
 class InputFeatures(object):
     """A single set of features of data."""

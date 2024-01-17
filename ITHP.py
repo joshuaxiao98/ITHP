@@ -1,5 +1,5 @@
 import torch.nn as nn
-from global_configs import *
+# from global_configs import *
 
 
 class ITHP(nn.Module):

@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/joshuaxiao98/ITHP.svg?style=social&label=Star)](https://github.com/joshuaxiao98/ITHP/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/joshuaxiao98/ITHP.svg?style=social&label=Fork)](https://github.com/joshuaxiao98/ITHP/network/members)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/joshuaxiao98/318e10f2a51f45faeb983715fae32581/ithp_test.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/joshuaxiao98/58265fa4270f19e5eea307b5cf56448f/ithp_test.ipynb)
 
 This repository hosts the official code for the paper "Information-Theoretic Hierarchical Perception for Multimodal Learning."
 
@@ -48,4 +48,4 @@ Please cite the following paper if this model assists your research:
 ```
 
 Experiment with the model in Google Colab:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/joshuaxiao98/318e10f2a51f45faeb983715fae32581/ithp_test.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/joshuaxiao98/58265fa4270f19e5eea307b5cf56448f/ithp_test.ipynb)

@@ -17,8 +17,8 @@ from transformers import get_linear_schedule_with_warmup, DebertaV2Tokenizer
 from torch.optim import AdamW
 from transformers import get_linear_schedule_with_warmup
 from deberta_ITHP import ITHP_DeBertaForSequenceClassification
-
-from global_configs import set_dataset_config, DEVICE, ACOUSTIC_DIM, VISUAL_DIM, TEXT_DIM
+import global_configs
+from global_configs import DEVICE, ACOUSTIC_DIM, VISUAL_DIM, TEXT_DIM
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", type=str, default="microsoft/deberta-v3-base", )
@@ -45,12 +45,11 @@ parser.add_argument('--IB_coef', default=10, type=float)
 parser.add_argument('--B0_dim', default=128, type=float)
 parser.add_argument('--B1_dim', default=64, type=float)
 
-
 args = parser.parse_args()
+global_configs.set_dataset_config(args.dataset)
 
-set_dataset_config(args.dataset)
-
-print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
+print(f'{__name__}: Text Dim = {global_configs.TEXT_DIM}, Acoustic Dim = {global_configs.ACOUSTIC_DIM},'
+      f'Visual Dim = {global_configs.VISUAL_DIM}')
 
 
 class InputFeatures(object):

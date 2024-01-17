@@ -2,9 +2,12 @@ from torch import nn
 from transformers.models.deberta_v2.modeling_deberta_v2 import DebertaV2PreTrainedModel, DebertaV2Model
 from transformers.models.bert.modeling_bert import BertPooler
 from ITHP import ITHP
-from global_configs import TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM, DEVICE
+import global_configs
+from global_configs import DEVICE
 
+TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM = global_configs.TEXT_DIM, global_configs.ACOUSTIC_DIM, global_configs.VISUAL_DIM
 print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
+
 class ITHP_DebertaModel(DebertaV2PreTrainedModel):
     def __init__(self, config, multimodal_config):
         super().__init__(config)

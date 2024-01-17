@@ -1,45 +1,57 @@
-# Information-Theoretic Hierarchical Perception
+# Information-Theoretic Hierarchical Perception (ITHP)
 
-This repository contains the official implementation code of the paper _Information-Theoretic Hierarchical Perception for Multimodal Learning_.
+[![GitHub stars](https://img.shields.io/github/stars/joshuaxiao98/ITHP.svg?style=social&label=Star)](https://github.com/joshuaxiao98/ITHP/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/joshuaxiao98/ITHP.svg?style=social&label=Fork)](https://github.com/joshuaxiao98/ITHP/network/members)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/joshuaxiao98/b86dbcf3f53f7e8412304a3302608302/ithp_test.ipynb)
 
 
+This repository is the home of the official implementation code for the paper "Information-Theoretic Hierarchical Perception for Multimodal Learning."
 
-## Instruction
+## Overview
 
-The Information-Theoretic Hierarchical Perception (ITHP) model is drawing inspiration from neurological models of information processing, we build the links between different modalities using the information bottleneck (IB) method. By leveraging the IB principle, ITHP constructs compact and informative latent states for information flow. The hierarchical architecture of ITHP enables incremental distillation of useful information. 
+The ITHP model is inspired by neurological information processing models. It utilizes the information bottleneck (IB) method to establish connections across different modalities, constructing compact and informative latent states for information flow. The model's hierarchical structure facilitates incremental distillation of information, making it an innovative approach to multimodal learning.
 
 ![Model](./assets/Model.png)
 
+## Getting Started
 
+To explore the ITHP model:
 
-## Usage
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/joshuaxiao98/ITHP.git
+   ```
 
-1. Clone the repository to your local machine:
-    ```
-    git clone https://github.com/joshuaxiao98/ITHP.git
-    ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2. Set up the environment
-    ```
-    pip install -r requirements.txt
-    ```
+3. Within the `./datasets` directory, execute `download_datasets.sh` to acquire the MOSI and MOSEI datasets, as detailed [here](https://github.com/WasifurRahman/BERT_multimodal_transformer).
 
-3. Download datasets inside ./datasets folder, run ./download_datasets.sh to download MOSI and MOSEI datasets. [1]
-   
-4. To train the model, run the `train.py` script:
-    ```
-    python train.py
-    ```
+4. Initiate model training with:
+   ```bash
+   python train.py
+   ```
 
+Experiment with the ITHP model directly in your browser using Google Colab:
 
-_Modifications_
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/joshuaxiao98/b86dbcf3f53f7e8412304a3302608302/ithp_test.ipynb)
 
->If you need to modify the variables, loss functions, or the outputs of the training, you'll need to adjust the code in `train.py`.
->
->The factors that affect memory usage are:
->- **`max_seq_length`**: The released models were trained with sequence lengths `50`, but you can fine-tune with a shorter max sequence length to save substantial memory. This is controlled by the `max_seq_length` flag in our example code.
->- **`train_batch_size`**: The memory usage is also directly proportional to the batch size.
+## Customization
 
+To adapt the model to your needs:
 
+- Modify `train.py` for changes to variables, loss functions, or outputs.
+- The `max_seq_length` parameter can be reduced from the default `50` to conserve memory.
+- Adjust `train_batch_size` to manage memory usage in relation to batch size.
 
-[1]: Datasets we used are from [Integrating Multimodal Information in Large Pretrained Transformers](https://github.com/WasifurRahman/BERT_multimodal_transformer)
+## Citation
+
+If you find this model useful in your research, please consider citing:
+
+```bibtex
+@article{
+	(To be filled)
+}
+```

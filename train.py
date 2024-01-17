@@ -14,7 +14,8 @@ from tqdm import tqdm
 from torch.nn import MSELoss
 
 from transformers import get_linear_schedule_with_warmup, DebertaV2Tokenizer
-from transformers.optimization import AdamW
+from torch.optim import AdamW
+from transformers import get_linear_schedule_with_warmup
 from deberta_ITHP import ITHP_DeBertaForSequenceClassification
 
 from global_configs import ACOUSTIC_DIM, VISUAL_DIM, DEVICE

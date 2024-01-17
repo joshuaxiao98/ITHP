@@ -24,7 +24,3 @@ def set_dataset_config(dataset_name):
     else:
         raise ValueError(f"Invalid dataset name: {dataset_name}")
 
-
-    print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
-
-

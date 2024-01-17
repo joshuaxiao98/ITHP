@@ -10,7 +10,6 @@ class ITHP(nn.Module):
         super(ITHP, self).__init__()
         TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM = (global_configs.TEXT_DIM, global_configs.ACOUSTIC_DIM,
                                               global_configs.VISUAL_DIM)
-        print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
 
         self.X0_dim = ITHP_args['X0_dim']
         self.X1_dim = ITHP_args['X1_dim']

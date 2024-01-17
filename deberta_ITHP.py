@@ -8,10 +8,9 @@ from global_configs import DEVICE
 
 class ITHP_DebertaModel(DebertaV2PreTrainedModel):
     def __init__(self, config, multimodal_config):
+        super().__init__(config)
         TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM = (global_configs.TEXT_DIM, global_configs.ACOUSTIC_DIM,
                                               global_configs.VISUAL_DIM)
-        print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
-        super().__init__(config)
         self.config = config
         self.pooler = BertPooler(config)
         model = DebertaV2Model.from_pretrained("microsoft/deberta-v3-base")

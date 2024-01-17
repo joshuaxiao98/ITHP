@@ -51,8 +51,6 @@ global_configs.set_dataset_config(args.dataset)
 ACOUSTIC_DIM, VISUAL_DIM, TEXT_DIM = (global_configs.ACOUSTIC_DIM, global_configs.VISUAL_DIM,
                                       global_configs.TEXT_DIM)
 
-print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
-
 class InputFeatures(object):
     """A single set of features of data."""
 

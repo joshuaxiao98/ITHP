@@ -158,13 +158,10 @@ def get_appropriate_dataset(data):
     tokenizer = get_tokenizer(args.model)
 
     features = convert_to_features(data, args.max_seq_length, tokenizer)
-    all_input_ids = torch.tensor(
-        [f.input_ids for f in features], dtype=torch.long)
-    all_visual = torch.tensor([f.visual for f in features], dtype=torch.float)
-    all_acoustic = torch.tensor(
-        [f.acoustic for f in features], dtype=torch.float)
-    all_label_ids = torch.tensor(
-        [f.label_id for f in features], dtype=torch.float)
+    all_input_ids = torch.tensor(np.array([f.input_ids for f in features]), dtype=torch.long)
+    all_visual = torch.tensor(np.array([f.visual for f in features]), dtype=torch.float)
+    all_acoustic = torch.tensor(np.array([f.acoustic for f in features]), dtype=torch.float)
+    all_label_ids = torch.tensor(np.array([f.label_id for f in features]), dtype=torch.float)
 
     dataset = TensorDataset(
         all_input_ids,

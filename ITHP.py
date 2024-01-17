@@ -1,6 +1,8 @@
 import torch.nn as nn
-from global_configs import *
+import global_configs
+# from global_configs import *
 
+TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM = global_configs.TEXT_DIM, global_configs.ACOUSTIC_DIM, global_configs.VISUAL_DIM
 print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
 
 

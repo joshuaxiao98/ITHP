@@ -18,7 +18,7 @@ def set_dataset_config(dataset_name):
 
     config = dataset_configs.get(dataset_name)
     if config:
-        TEXT_DIM = config["ACOUSTIC_DIM"]
+        ACOUSTIC_DIM = config["ACOUSTIC_DIM"]
         VISUAL_DIM = config["VISUAL_DIM"]
         TEXT_DIM = config["TEXT_DIM"]
     else:

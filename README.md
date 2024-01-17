@@ -24,7 +24,7 @@ Drawing on neurological models, the ITHP model employs the information bottlenec
 
 3. Train the model on `MOSI` or `MOSEI` datasets using the `--dataset` flag:
    ```bash
-   python train.py --dataset mosi   # For MOSI
+   python train.py --dataset mosi   # For MOSI (default)
    python train.py --dataset mosei  # For MOSEI
    ```
 

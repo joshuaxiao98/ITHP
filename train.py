@@ -50,6 +50,9 @@ args = parser.parse_args()
 
 set_dataset_config(args.dataset)
 
+print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
+
+
 class InputFeatures(object):
     """A single set of features of data."""
 

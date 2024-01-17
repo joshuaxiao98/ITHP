@@ -4,7 +4,7 @@ from transformers.models.bert.modeling_bert import BertPooler
 from ITHP import ITHP
 from global_configs import TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM, DEVICE
 
-
+print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
 class ITHP_DebertaModel(DebertaV2PreTrainedModel):
     def __init__(self, config, multimodal_config):
         super().__init__(config)

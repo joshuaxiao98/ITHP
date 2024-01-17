@@ -18,7 +18,7 @@ from torch.optim import AdamW
 from transformers import get_linear_schedule_with_warmup
 from deberta_ITHP import ITHP_DeBertaForSequenceClassification
 
-from global_configs import set_dataset_config, DEVICE
+from global_configs import set_dataset_config, DEVICE, ACOUSTIC_DIM, VISUAL_DIM, TEXT_DIM
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", type=str, default="microsoft/deberta-v3-base", )

@@ -5,11 +5,12 @@ from ITHP import ITHP
 import global_configs
 from global_configs import DEVICE
 
-TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM = global_configs.TEXT_DIM, global_configs.ACOUSTIC_DIM, global_configs.VISUAL_DIM
-print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
 
 class ITHP_DebertaModel(DebertaV2PreTrainedModel):
     def __init__(self, config, multimodal_config):
+        TEXT_DIM, ACOUSTIC_DIM, VISUAL_DIM = (global_configs.TEXT_DIM, global_configs.ACOUSTIC_DIM,
+                                              global_configs.VISUAL_DIM)
+        print(f'{__name__}: Text Dim = {TEXT_DIM}, Acoustic Dim = {ACOUSTIC_DIM}, Visual Dim = {VISUAL_DIM}')
         super().__init__(config)
         self.config = config
         self.pooler = BertPooler(config)
@@ -74,7 +75,6 @@ class ITHP_DeBertaForSequenceClassification(DebertaV2PreTrainedModel):
             visual,
             acoustic,
     ):
-
         pooled_output, IB_total, kl_loss_0, mse_0, kl_loss_1, mse_1 = self.dberta(
             input_ids,
             visual,

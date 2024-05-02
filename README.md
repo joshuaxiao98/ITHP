@@ -39,11 +39,13 @@ Drawing on neurological models, the ITHP model employs the information bottlenec
 Please cite the following paper if this model assists your research:
 
 ```bibtex
-@article{
-  title={...},
-  author={...},
-  journal={...},
-  year={...}
+@inproceedings{
+xiao2024neuroinspired,
+title={Neuro-Inspired Information-Theoretic Hierarchical Perception for Multimodal Learning},
+author={Xiongye Xiao and Gengshuo Liu and Gaurav Gupta and Defu Cao and Shixuan Li and Yaxing Li and Tianqing Fang and Mingxi Cheng and Paul Bogdan},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=Z9AZsU1Tju}
 }
 ```
 
